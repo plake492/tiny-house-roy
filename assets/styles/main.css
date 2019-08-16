@@ -1,29 +1,75 @@
-html, body {
+
+body {
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+
+
+}
+.header-img {
+  background-image:url(../images/royHead.JPG); 
+  margin: 0;
+  background-attachment:fixed
+  ;background-size:cover;
+  height:947px;
 }
 
 .card-deck {
     margin: 50px 0 50px 0;
 }
-/* .header-img {
-  background-image:url(royHead.jpg);
-  margin: 0;
-  background-attachment:fixed;
-  background-size:cover;
-  height:947px;
-} */
+
+.about-p{
+  line-height: 2;
+  font-weight: bold;
+  font-size: 16px
+}
+
+.paragraph {
+  margin:0 100px 0 100px;
+}
+
+  #p-col1 {
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    max-width: 60%;
+    padding: 0 4px;
+  }
+  #p-col2 {
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+  }
+
+  #p-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  #img-right {
+    margin-top: 16px;
+    vertical-align: center;
+    width: 55%;
+  }
 
 #header-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center
+  text-align: center;
+  background-color: rgba(255, 255, 255)
 }
 
 .info {
     background-color: rgb(207, 211, 214);
     text-align: center;
+}
+
+#button {
+  background-color: white:
 }
 
 #contact {
@@ -52,11 +98,7 @@ a:link {
   * {
     box-sizing: border-box;
   }
-  
-html {
-    margin: 0;
-    font-family: Arial;
-  }
+
   
   .header {
     text-align: center;
@@ -71,7 +113,6 @@ html {
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
   .column {
     -ms-flex: 33%; /* IE10 */
     flex: 33%;
@@ -95,20 +136,50 @@ html {
 
 
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 950px) {
     .column {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
+    #p-col1 {
+      -ms-flex: 100%; /* IE10 */
+      flex: 100%;
+      max-width: 100%;
+      padding: 0 4px;
+    }
+    #p-col2 {
+      -ms-flex: 100%; /* IE10 */
+      flex: 100%;
+      max-width: 100%;
+      padding: 0 4px;
+    }
+    #img-right {
+      margin-top: 16px;
+      vertical-align: center;
+      width: 100%;
+    }
+    .paragraph {
+      margin:0 5px 0 5px;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 767px) {
+    .header-img {
+      background-image: url(../images/royHeadMobile.jpeg)
+    }
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+      
+    .column img {
+      margin-top: 4px;
+      vertical-align: middle;
+      width: 100%;
+      padding: 0 10px 0 10px;
 
+    }
   }
