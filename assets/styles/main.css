@@ -55,6 +55,11 @@ body {
     width: 55%;
   }
 
+  .us-image {
+    width: 75%
+  }
+
+
 #header-card {
   display: flex;
   align-items: center;
@@ -68,9 +73,7 @@ body {
     text-align: center;
 }
 
-#button {
-  background-color: white:
-}
+
 
 #contact {
     background-color: rgb(207, 211, 214);
@@ -127,14 +130,12 @@ a:link {
     /* padding: 20px; */
 
   }
+  .about-us {
+    margin: 0px 50px 0px 50px;
+    line-height: 2
+  }
 
-  /* .column img:hover {
-    transform: scale(1.25)
-
-  } */
   
-
-
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 950px) {
     .column {
