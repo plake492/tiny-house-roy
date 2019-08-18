@@ -3,16 +3,33 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Quicksand', sans-serif;
-
-
 }
+
 .header-img {
   background-image:url(../images/royHead.JPG); 
   margin: 0;
-  background-attachment:fixed
-  ;background-size:cover;
+  background-attachment:fixed;
+  background-size:cover;
   height:947px;
+  position: relative;
 }
+
+.nav-nav-scroll {
+  background-color: rgb(134, 134, 134, 0.3);
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 1 ;
+}
+
+.nav-button {
+  padding: 5px 15px 5px 15px;
+  font-size: 20px
+}
+
 
 .card-deck {
     margin: 50px 0 50px 0;
@@ -177,13 +194,13 @@ a:link {
       font-size:18px;
       margin: 50Px 25px 50px 25px 
     }
-    #header-card {
-      /* display: flex; */
-      /* align-items: center; */
-      /* justify-content: center; */
-      /* text-align: center; */
-      /* background-color: rgba(255, 255, 255); */
-  }
+    .nav-button {
+      padding: 5px 15px 5px 15px;
+      font-size: 13px
+    }
+  
+  } 
+  
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 767px) {

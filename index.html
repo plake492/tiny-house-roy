@@ -13,25 +13,36 @@
   </head>
   <body>
   
-<div class="header-img" style="">
+<div class="header-img">
   <div class="card" id="header-card">
     <div class="card-body">
-      <div class="row">
+      <div class="row head-container" style="font-weight:200">
         <div class="column">
-            <h2 class="card-title">Tiny House Roy</h2>
+            <h2 class="item-b">$65,000</h2>
         </div>  
         <div class="column">
-          <h2>$65,000</h2>
+            <h2 class="card-title item-a">Tiny House Roy</h2>
         </div>
         <div class="column">
-          <h2><a href="mailto:vlake1196@gmail.com?subject=Tiny House Roy." target="_blank" style="background-color: rgb(147, 146, 146); padding:5px 15px 5px 15px; border-width: 1px; border-radius: 5px">Contact Us</a></h2>  
+            <h2><a class="item-c" href="mailto:vlake1196@gmail.com?subject=Tiny House Roy." target="_blank" style="background-color: rgb(147, 146, 146); padding:5px 15px 5px 15px; border-width: 1px; border-radius: 5px">Contact Us</a></h2>  
         </div>
       </div>
     </div>
   </div>
+  <div stlye="background-color: rgb(134, 134, 134, 0.5);">
+    <nav class="nav-nav-scroll">
+      <a href="#A" class="nav-button">About</a>
+      <a href="#L" class="nav-button">Location</a>
+      <a href="#P" class="nav-button">Photos</a>
+      <a href="#U" class="nav-button">About Us</a>
+      <a href="#M" class="nav-button">More Info</a>
+      <a href="#C" class="nav-button">Contact</a>
+    </nav>
+</div>
 </div>
 
-<h3 style="text-align:center; margin-top: 50px">About</h3>  
+
+<h3 style="text-align:center; margin-top: 20px" id="A">About</h3>  
 <hr style="border-width:2px;width:95%;margin-bottom: 20px">
 
 <div class="card-body about-p paragraph">
@@ -76,10 +87,13 @@
   </div>               
 </div>
 
+<h3 style="text-align:center; margin-top: 20px" id="L">Location</h3>  
+<hr style="border-width:2px;width:95%;margin-bottom: 20px">
+
 <div id="map"></div>
 
 
-<h3 style="text-align:center; margin-top: 70px">Photos</h3>  
+<h3 style="text-align:center; margin-top: 70px" id="P">Photos</h3>  
 
 <hr style="border-width:2px;width:95%;margin-bottom: 50px">
 
@@ -124,10 +138,12 @@
   </div>
 </div> 
 
+<!-- <div id="IDofYourDivYouWantToGoTo"></div> -->
+
 
 <div class="card-body about-p paragraph">
 
-<h3 style="text-align:center; margin-top: 50px">About Us</h3>  
+<h3 style="text-align:center; margin-top: 50px" id="U">About Us</h3>  
 <hr style="border-width:2px;width:95%;margin-bottom: 50px">
 
   <div class="row">
@@ -137,8 +153,11 @@
     <div class="column">
     <h6 class="card-title about-us" style="text-align: center">
       We are Victroia, Patrick and Selah Lake. After getting married in late 2016, we began building our Tiny House Roy. It took us a little over a year and whole lot of help from friends and fammily to build Roy.
-      As much as we love the house we've built for ourselves, our familiy is expanding and so are our living needs. So we are eagerly lookimg to find someone who will love the house we've built as much as we have. 
-      <a href="mailto:vlake1196@gmail.com?subject=Tiny House Roy." target="_blank" style="align-content: center">EMAIL US</a>                    
+      As much as we love the house we've built for ourselves, our familiy is expanding and so are our living needs. So we are eagerly lookig to find someone who will love the house we've built as much as we have. 
+      <br>
+      <br>
+      <br>
+      <a class="item-c" href="mailto:vlake1196@gmail.com?subject=Tiny House Roy." target="_blank" style="background-color: rgb(147, 146, 146); padding:5px 15px 5px 15px; border-width: 1px; border-radius: 5px">Contact Us</a>
 
     </h6>
   
@@ -153,7 +172,7 @@
 </div>
 
 
-<h3 style="text-align:center; margin-top: 50px">More Info</h3>  
+<h3 style="text-align:center; margin-top: 50px" id="M">More Info</h3>  
 
 <hr style="border-width:2px;width:95%;">
 
@@ -163,7 +182,7 @@
       <div class="card-body">
         <h5 class="card-title">Location</h5>
         <hr style="border-width:2px;width:95%;">
-        <a class="card-text" href="http://www.orlandolakefrontth.com/" target="blank">If your looking to own your tiny home here at College Park in Orlando, FL, check Out Orlando Lakefront RV & Tiny Home Community</a>                  
+        <a class="card-text" href="http://www.orlandolakefrontth.com/" target="blank">If your looking to keep Tiny House Roy here at College Park in Orlando, FL, check out Orlando Lakefront RV & Tiny Home Community</a>                  
       </div>
     </div>
     <div class="card info">
@@ -184,7 +203,7 @@
     </div>
   </div>
 
-  <h3 style="text-align:center; margin-top: 50px">Contact</h3>  
+  <h3 style="text-align:center; margin-top: 50px" id="C">Contact</h3>  
   <hr style="border-width:2px;width:95%;margin-bottom: 50px">
   <p class="s" >We'd love to hear from you! Feel free to reach out to us via email with any questions about Tiny House Roy. Make sure to leave a <strong>phone number </strong>, your <strong> name</strong>  and <strong>email.</strong></h5>
 
@@ -224,10 +243,16 @@
           // The marker, positioned at Uluru
           var marker = new google.maps.Marker({position: uluru, map: map});
         }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzdH3rKWvExoBIXe5ozXpggK0fMIIyr8&callback=initMap">
-            </script>
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUL1WWpha3wP-k5yE3Ap2zEmyxjZrecjY&callback=initMap">
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#A").scroll(function(){
+          $(".nav-nav").toggleClass("nav-nav-scroll");
+        });
+      });</script>
   </body>
 </html>
 
