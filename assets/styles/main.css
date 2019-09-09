@@ -150,7 +150,9 @@ a:link {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-
+  }
+  img:hover {
+    
   }
   .about-us {
     margin: 0px 50px 0px 50px;
